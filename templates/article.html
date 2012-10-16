@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block navigation %}
+     <div class="navigation">
+        <ol class="nav">
+          <li class="current"><a href="{{ SITEURL }}">Blog</a> </li>
+          <li><a href="{{ SITEURL }}/archives.html">Archive</a></li>
+          <li><a href="{{ SITEURL }}/tags.html">Tags</a> </li>
+          <li><a href="{{ FEED_RSS }}">RSS</a> </li>
+        </ol>
+      </div>
+{% endblock navigation %}  
+{% block content %}
+<section id="content" class="body">
+  <header class="post">
+    <h2 class="entry-title">
+      {{ article.title }}
+    </h2>
+  </header>
+  <footer class="post-info">
+    <abbr>
+      {{ article.locale_date }} 
+      {% if article.author %}
+         By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+      {% endif %}  
+    </abbr>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    {{ article.content }}
+  </div><!-- /.entry-content -->
+{% include 'disqus.html' %}
+</section>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block navigation %}
+     <div class="navigation">
+        <ol class="nav">
+          <li><a href="{{ SITEURL }}">Blog</a> </li>
+          <li class="current"><a href="{{ SITEURL }}/archives.html">Archive</a></li>
+          <li><a href="{{ SITEURL }}/tags.html">Tags</a> </li>
+          <li><a href="{{ SITEURL }}/{{ FEED_RSS }}">RSS</a> </li>
+        </ol>
+      </div>
+{% endblock navigation %}
+
+{% block content %}
+<h2>Archives:</h2>
+
+<table class="archives">
+{% for article in dates %}
+    <tr>
+        <td>{{ article.locale_date }}</td>
+        <td><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></td>
+    </tr>
+{% endfor %}
+</table>
+{% endblock %}

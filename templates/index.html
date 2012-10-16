@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block navigation %}
+     <div class="navigation">
+        <ol class="nav">
+          <li class="current"><a href="{{ SITEURL }}">Blog</a> </li>
+          <li><a href="{{ SITEURL }}/archives.html">Archive</a></li>
+          <li><a href="{{ SITEURL }}/tags.html">Tags</a> </li>
+          <li><a href="{{ SITEURL }}/{{ FEED_RSS }}">RSS</a> </li>
+        </ol>
+      </div>
+{% endblock navigation %}
+{% block content %}        
+<section id="content">
+<div class="posts">
+    <ol id="post-list">
+    {% for article in articles_page.object_list %}        
+        <li>
+            <article class="archive">
+                <header> 
+                    <h2 class="archive-entry-title">
+                        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a>
+                    </h2> 
+                </header>
+                <footer class="post-info">
+                    <abbr>
+                      {{ article.locale_date }} 
+                      {% if article.author %}
+                         By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+                      {% endif %}  
+                    </abbr>
+                    <div class="entry-summary"> {{ article.summary }}
+                    <a href="{{ SITEURL }}/{{ article.url }}">read more</a></div>
+                </footer><!-- /.post-info -->
+                <!-- /.entry-content -->
+            </article>
+        </li>
+    {% endfor %}
+    </ol><!-- /#posts-list -->
+</div>
+{% include 'pagination.html' %}
+</section><!-- /#content -->
+{% endblock content %}
