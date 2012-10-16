@@ -5,7 +5,7 @@ Iris
 What is iris?
 -------------
 
-Iris is a `pelican <http://getpelican.com>`_ theme based on `Flask webpage <http://flask.pocoo.org/>`_ Also uses various fonts. This are:
+Iris is a `pelican <http://getpelican.com>`_ theme based on `Flask webpage <http://flask.pocoo.org/>`_ Also uses various fonts:
 
 - For social icons: `Font awesome <http://fortawesome.github.com/Font-Awesome/>`_
 - For the title: `The girl next door <http://www.google.com/webfonts/specimen/The+Girl+Next+Door>`_
@@ -20,7 +20,7 @@ Preview
 Variables
 ---------
 
-Some of the variables that could be used are:
+Some of the variables that could be used:
 
 - ``DISQUS_SITENAME``: For the disqus comments
 - ``GOSQUARED_SITENAME``: For the Go squared analytics
@@ -28,13 +28,13 @@ Some of the variables that could be used are:
 Installation
 ------------
 
-To install, insert in your pelican theme directory and clone the repo. For 
+To install, go to your pelican theme directory and clone the repo. For 
 example::
     
     $ cd /home/slok/.virtualenvs/blog/lib/python2.7/site-packages/pelican/themes/
-    git clone https://github.com/slok/iris.git
+    $ git clone https://github.com/slok/iris.git
 
-the set the variable ``THEME`` to ``iris`` like this::
+Set the variable ``THEME`` to ``iris`` like this::
 
     THEME = "iris"
 
