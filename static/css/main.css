@@ -88,3 +88,8 @@ article .archive{margin-top: 10px; margin-bottom: 10px;}
 /* Inset, by Dan Eden */ 
 hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); 
               border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+/* For align center */
+.align-center { display: block;
+                margin-left: auto;
+                margin-right: auto}
