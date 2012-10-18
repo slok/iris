@@ -71,7 +71,12 @@ div.navigation {
 .current a{color: #666}
 /* social */
 .social      {margin:10px 0 10px 0; font-size: 40px; text-align: center;}
-.social a    {margin: 10px 20px 5px 20px; color: #777; text-decoration: none;}
+.social a    {margin: 10px 20px 5px 20px; color: #777; text-decoration: none;
+              -webkit-transition: color 0.5s linear;  
+              -moz-transition: color 0.5s linear;  
+              -o-transition: color 0.5s linear;  
+              -ms-transition: color 0.5s linear;  
+              transition: color 0.5s linear}
 .social a:hover {color: #004B6B;}
 
 /*posts*/
