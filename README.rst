@@ -27,8 +27,24 @@ Variables
 Some of the variables that could be used:
 
 - ``DISQUS_SITENAME``: For the disqus comments
-- ``GOSQUARED_SITENAME``: For the Go squared analytics
 - ``EMAIL``: For the email "mailto:"
+
+For the analytics we have two flavours, one is Go `Squared <https://www.gosquared.com>`_
+
+- ``GOSQUARED_SITENAME``: For the Go squared analytics
+
+And the other is `Google analytics <https://www.google.com/analytics>`_ Google analytics has various forms. The
+basic one is:
+
+- ``GOOGLE_ANALYTICS_CODE``: this is the code of GA, something similar to: ``UA-xxxxxxxx-y``
+
+If you have analytics across domains you can put this setting:
+
+- ``GOOGLE_ANALYTICS_DOMAIN = "xlarrakoetxea.org"``
+
+And if you have upper domain level (com, org, co.uk...)
+
+- ``GOOGLE_ANALYTICS_DOMAIN_UP = True``
 
 Installation
 ------------

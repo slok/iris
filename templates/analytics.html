@@ -3,6 +3,8 @@
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', "{{ GOOGLE_ANALYTICS_CODE }}"]);
+  {% if GOOGLE_ANALYTICS_DOMAIN %}_gaq.push(['_setDomainName', "{{GOOGLE_ANALYTICS_DOMAIN}}"]);{% endif %}
+  {% if GOOGLE_ANALYTICS_DOMAIN_UP %}_gaq.push(['_setAllowLinker', true]);{% endif %}
   _gaq.push(['_trackPageview']);
 
   (function() {
