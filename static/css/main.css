@@ -2,7 +2,7 @@ body         { font-family: 'Georgia', serif; font-size: 18px; color: #444; }
 a            { color: #004B6B; }
 a:hover      { color: #6D4100; }
 .box         { width: 740px; margin: 30px auto; }
-h2, h3, h4   { font-family: 'Garamond', 'Georgia', serif; font-weight: normal; color: #222;}
+h2, h3, h4   { font-family: 'Marcellus', serif; font-weight: normal; color: #222;}
 h1           { margin: 0 0 30px 0; background: no-repeat center;
                height: 165px; }
 h1 span      { display: none; }
@@ -77,13 +77,22 @@ div.navigation {
 /*posts*/
 .posts ol, .posts ul, .posts li  {list-style-type: none; padding: 0;}
 .posts li {padding-bottom: 30px;}
-.post h2 { font-size: 50px;}
-.post h2 a {text-decoration: none;}
+.post { font-size: 50px;}
+.post a {text-decoration: none;}
 .post-info abbr {font-size: 15px; color: #555; font-style: italic;}
 article .archive{margin-top: 10px; margin-bottom: 10px;}
-.entry-content{margin-top: 50px; margin-bottom: 40px;}
-.archive-entry-title a{font-size: 40px; text-decoration: none;}
 
+.entry-content{margin-top: 50px; margin-bottom: 40px;}
+
+h1.archive-entry-title,
+.entry-title,
+h1.archive-entry-title a{font-family: 'Marcellus', serif; font-weight: normal;
+                       font-size: 40px; text-decoration: none;
+                       margin: 15px 0 60px 0;height: 0;}
+
+.entry-title {color: #222; font-size: 50px; margin-bottom: 70px}
+
+.entry-content h2{margin: 40px 0 5px 0; color: #004B6B;}
 
 /* Inset, by Dan Eden */ 
 hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); 

@@ -12,6 +12,7 @@ Also uses various fonts:
 
 - For social icons: `Font awesome <http://fortawesome.github.com/Font-Awesome/>`_
 - For the title: `The girl next door <http://www.google.com/webfonts/specimen/The+Girl+Next+Door>`_
+- For the headers: `Marcellus <http://www.google.com/webfonts/specimen/Marcellus>`_
 - For the soure code: `Inconsolata <http://www.google.com/webfonts/specimen/Inconsolata>`_
 
 Preview
