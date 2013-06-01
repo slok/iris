@@ -23,9 +23,9 @@ code, tt     {padding: 1px 4px 1px 4px; border-style:solid; border-width:1px; bo
 
 .ig          { color: #888; }
 p            { line-height: 1.4; }
-ul           { margin: 15px 0 15px 0; padding: 15; list-style: none; line-height: 1.4; }
+ul           { margin: 15px 0 15px 0; padding: 15px; list-style: none; line-height: 1.4; }
 ul li:before { content: "\00BB \0020"; color: #888; position: absolute; margin-left: -19px; }
-ol           { line-height: 1.4; margin: 15px 0 15px 30px; padding: 15; }
+ol           { line-height: 1.4; margin: 15px 0 15px 30px; padding: 15px; }
 blockquote   { margin: 0; font-style: italic; color: #444; }
 .footer      { font-size: 13px; color: #888; text-align: center; margin-top: 25px; }
 .more        { text-align: right; margin-top: 0; font-size: 0.9em; font-style: italic; }
